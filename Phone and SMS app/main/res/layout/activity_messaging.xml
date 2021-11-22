@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity"
+    android:background="@color/light_gray">
+
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="Enter the phone number"
+        android:textSize="20sp"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:hint="Type your message here.."
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Send"
+        android:onClick="sendMessage"
+        android:layout_gravity="end"
+        android:backgroundTint="@color/black" />
+
+
+
+
+</LinearLayout>
